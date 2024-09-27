@@ -1,0 +1,60 @@
+.social {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 10em 3em;
+}
+.social-email {
+  display: flex;
+  gap: 5px;
+}
+.email {
+  font-size: 2.5em;
+  font-weight: 400;
+}
+.social-email-logo {
+  transition: all 1s ease-in-out;
+  width: 33px;
+}
+.social-links {
+  display: flex;
+  flex-direction: column;
+  font-family: Epilogue, serif;
+  font-size: 1.5em;
+  gap: 1.2em;
+  width: 45%;
+}
+.social-link,
+.social-link2 {
+  align-items: center;
+  display: flex;
+  gap: 1em;
+  justify-content: space-around;
+}
+.instagram,
+.behance,
+.linkedin,
+.social-link,
+.social-link2,
+.vimeo {
+  color: #fff;
+  text-decoration: none;
+}
+@media (max-width: 900px) {
+  .social {
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .social-email {
+    margin-bottom: 2em;
+  }
+  .social-links {
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .social-links {
+    width: 100%;
+  }
+}

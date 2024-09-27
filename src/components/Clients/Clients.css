@@ -1,0 +1,41 @@
+.clients {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14em;
+}
+.clients-text {
+  font-size: 4em;
+  font-weight: 400;
+  padding-left: 1em;
+}
+.clients-logo {
+  grid-gap: 2em 10em;
+  display: grid;
+  gap: 2em 5em;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-right: 2em;
+}
+
+.logos {
+  width: 6.5em;
+}
+@media (max-width: 900px) {
+  .clients {
+    flex-direction: column;
+  }
+  .clients-logo {
+    margin: 2em 2em;
+  }
+}
+@media (max-width: 750px) {
+  .clients-logo {
+    margin: 2em 1em;
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .clients-text {
+    padding-left: 0em;
+  }
+}
